@@ -1,0 +1,35 @@
+body,td,th {
+	font-family: "Lemon/Milk";
+	font-size: 12px;
+}
+
+body {
+	background-image: url("../../picture/grass.jpg"));
+
+}
+
+.clearfix {
+    margin: 20px;
+}
+
+.jumbotron{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h3{
+    color: white !important;
+}
+
+.product{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
