@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<xsl:for-each select="list/product">
+			<div class="card">
+				<img class="img-prod-thumbnail" width="300" height="300">
+					<xsl:attribute name="src"><xsl:value-of select="pImgPath"/></xsl:attribute>
+				</img>
+
+                <div class="card-block">
+                    <h4 class="card-title"><xsl:value-of select="name"/></h4>
+                    <p class="card-text" style="margin-bottom: 0px;"><xsl:value-of select="desc"/></p>
+					  <div class="card-block">
+						<a><font face="Lemon/Milk" color="red" size="10"><xsl:value-of select="discaunt"/>% | </font></a>
+						<a><font face="Lemon/Milk" color="blue" size="5"> RM <xsl:value-of select="price"/></font></a>
+					  </div>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+
+			</div>
+		</xsl:for-each>
+	</xsl:template>
+</xsl:stylesheet>

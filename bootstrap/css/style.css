@@ -33,3 +33,24 @@ h3{
     margin-bottom: 2rem;
     border: 0;
 }
+
+#email {
+              
+    width: 250px;
+              
+}
+
+.suscribe{
+    
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: courier;
+    text-align: center;
+    
+}
+
+.submit{
+    
+    margin-left: 5px;
+}
+

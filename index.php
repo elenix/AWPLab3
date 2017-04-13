@@ -7,6 +7,7 @@
     <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <script src="jquery/jquery-3.2.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="Js/pullData.js"></script>
 </head>
 <body>
 <div class="collapse bg-inverse" id="navbarHeader">
@@ -35,18 +36,48 @@
         </button>
       </div>
     </div>
-
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">BeautyCup</h1>
         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <form class="form-inline suscribe">
+                <div class="input-group">
+                <div class="input-group-addon">@</div>
+                    <input type="Email" class="form-control" id="email" placeholder="email@example.com">
+                </div>
+                <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
       </div>
     </section>
  <div class="product text-muted">
-   <div><?php include "php/menu.php" ?></div>
+     <div class="container">
+           <div class="row" style="margin-left: 50px;margin-right: 50px;">
+   <div id="product_list"></div>
+         </div>
+     </div>
+     <div class="container">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end" id="pagi">
+        <li class="page-item">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">6</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+         </div>
     </div>
     <footer class="text-muted">
       <div class="container">
+          <hr class="mr-4" />
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
