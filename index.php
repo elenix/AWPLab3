@@ -51,9 +51,9 @@
     </section>
  <div class="product text-muted">
      <div class="container">
-           <div class="row" style="margin-left: 50px;margin-right: 50px;">
-   <div id="product_list"></div>
-         </div>
+       <div class="row" style="margin-left: 50px;margin-right: 50px;">
+       <div id="product_list"></div>
+     </div>
      </div>
      <div class="container">
     <nav aria-label="Page navigation example">
